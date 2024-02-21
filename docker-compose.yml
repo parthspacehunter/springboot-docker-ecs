@@ -17,9 +17,9 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
   app:
-    image: "parth0546/spring-application"
+    build: .
     ports:
-      - "8081:8081"
+      - "8000:8000"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db/postgres
       SPRING_DATASOURCE_USERNAME: postgres
