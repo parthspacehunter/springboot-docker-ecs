@@ -19,7 +19,7 @@ services:
   app:
     image: "parth0546/spring-application"
     ports:
-      - "8080:8080"
+      - "8081:8081"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db/postgres
       SPRING_DATASOURCE_USERNAME: postgres
